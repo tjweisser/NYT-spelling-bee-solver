@@ -11,7 +11,7 @@ special_letter = 'e'
 words = [x.lower() for x in words.words()]
 
 # all words in line with the requirements (special character and length)
-list = [x for x in words if (len(x) > 3) and (special_letter in x)]
+list = [x for x in words if (3 < len(x) < 8) and (special_letter in x)]
 
 # generate all possible permutations and print intersection with word list
 for i in range(4, 8):
